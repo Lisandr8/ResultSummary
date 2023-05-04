@@ -1,0 +1,112 @@
+@media only screen and (max-width: 375px) {
+  @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+  :root {
+    /*  Colors */
+    --Light-red: rgb(255, 87, 87);
+    --Orangey-yellow: rgb(255, 176, 31);
+    --Green-teal: rgb(0, 189, 145);
+    --Cobalt-blue: rgb(17, 37, 212);
+    /* Gradients */
+    --background1: hsl(252, 100%, 67%);
+    --background2: hsl(241, 81%, 54%);
+    --circle1: hsla(256, 72%, 46%, 1);
+    --circle2: rgba(36, 33, 202, 0);
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: "Hanken Grotesk", sans-serif;
+  }
+  /* ----------------------------------------------------------------------- */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container .left {
+    width: 100vw;
+    border-radius: 30px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .container .left h4 {
+    font-size: 20px;
+  }
+
+  .container .circle {
+    width: 155px;
+    height: 155px;
+    margin: 10px auto 5px;
+  }
+
+  .container .circle h1 {
+    font-weight: 800;
+    font-size: 3rem;
+  }
+
+  .container .left .circle p {
+    font-weight: 500;
+    font-size: large;
+  }
+
+  .container .left h3 {
+    font-weight: 700;
+    font-size: larger;
+    margin-top: 20px;
+    margin-bottom: -15px;
+  }
+
+  .container .left p {
+    font-size: 1em;
+    width: 300px;
+  }
+
+  /* ----------------------------Right Side----------------------------  */
+
+  .container .right {
+    width: 100vw;
+  }
+
+  .container .summary-cont div {
+    width: 85%;
+    height: 55px;
+    margin: 10px auto;
+  }
+
+  .container .summary-cont p {
+    font-size: 17px;
+    padding-left: 10px;
+    font-weight: 500;
+  }
+
+  .container .summary-cont span {
+    font-weight: 500;
+    color: gray;
+    font-size: 15px;
+    padding-left: 56px;
+  }
+
+  .container .summary-cont b {
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    font-weight: bold;
+  }
+
+  button {
+    width: 85%;
+    height: 50px;
+    margin: 20px auto 40px;
+    font-size: 18px;
+  }
+}

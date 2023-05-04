@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root {                                
+                                                             /*  Colors */
+  --Light-red: rgb(255, 87, 87);
+  --Orangey-yellow: rgb(255, 176, 31);
+  --Green-teal: rgb(0, 189, 145);
+  --Cobalt-blue: rgb(17, 37, 212);
+                                                           /* Gradients */
+  --background1: hsl(252, 100%, 67%);
+  --background2: hsl(241, 81%, 54%);
+  --circle1: hsla(256, 72%, 46%, 1);
+  --circle2: rgba(36, 33, 202, 0);
+                                                            /* Neutral */
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: 'Hanken Grotesk', sans-serif;            
+}
+
+.container {
+  max-width: 1440px;
+  width: 520;
+  margin: 60px  auto;
+  display: flex;
+  justify-content: center;
+}
+
+.container .left {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 18px;
+  background: linear-gradient( var(--background1), var(--background2) );  
+}
+
+.container .left h4{
+  color: var(--Light-lavender);  
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.container .circle {
+  width: 130px;
+  height: 130px;
+  margin: 30px auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient( var(--background2), var(--background1) );
+}
+
+.container .circle h1{
+  text-align: center;
+  margin: auto;
+  font-weight: 700;
+  font-size: 2.7rem;
+  color: var(--White);
+}
+
+.container .left .circle p {
+  text-align: center;
+  margin: auto;  
+  font-weight: 500;
+  font-size: small;
+  color: var(--Light-lavender);
+}
+
+.container .left h3 {
+  color: var(--White);
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.container .left p {
+  width: 180px;
+  margin: 20px auto;
+  padding-bottom: 15px;
+  color: var(--Light-lavender);
+  font-size: .7em;
+  text-align: center;
+}
+
+
+/* ----------------------------Right Side----------------------------  */
+.container .right {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  box-shadow: 5px 5px 17px var(--Pale-blue);
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+
+.container .right h4 {
+  padding-top: 30px;
+  padding-left: 30px;
+  font-weight: 700;
+}
+/* ------------------------------------------------------------------------------------- */
+.container .reaction {
+  background-color: rgba(255, 87, 87, .1);  
+  color:  var(--Light-red);
+}
+
+.container .memory {
+  background-color: rgba(255, 176, 31, .1);
+  color:  var(--Orangey-yellow); 
+}
+.container .verbal {
+background-color: rgba(0, 189, 145, .1);  
+color:  var(--Green-teal); 
+}
+.container .visual {
+  background-color: rgba(17, 37, 212, .1); 
+  color:  var(--Cobalt-blue);
+}
+/* 
+------------------------------------------------------------------------------------- */
+.container .summary-cont div {
+  width: 225px;
+  height: 40px;
+  margin: 20px auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container .summary-cont p {
+  font-size: 14px;
+  padding-left: 10px;
+  font-weight: 500;
+  margin: auto 5px;
+  width: 160px;
+}
+
+.container .summary-cont img {
+  display: block;
+  margin: 0 10px 0 0;
+  float: inline-start;
+} 
+.container .summary-cont b {
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+  font-weight: bold;
+}
+
+.container .summary-cont span {
+  font-weight: 500;
+  color: gray;
+  font-size: 14px;
+}
+/* ------------------------------------------------------------------------------------- */
+button { 
+  background-color: #303b59;
+  color: var(--White);
+  border: none;
+  border-radius: 40px;
+  font-weight: 500;
+  font-size: 14px;
+  width: 220px;
+  height: 35px;
+  display: block;
+  margin: auto;
+}
+button:hover {
+  background: linear-gradient( var(--background1), var(--background2) );
+  cursor: pointer;
+}
+/* ------------------------------------------------------------------------------------- */
